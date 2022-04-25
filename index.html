@@ -40,11 +40,12 @@
         <h4>Pick a number from 1-6</h4>
         </div>  
         <!-- Slider with Starting Value -->
-        <!-- Note: I added and ID to this component, so I could reference it in code -->
-        <!-- Note: I also placed it inside a "label" for accessability -->
+        <label>
+          Slider's Value
           <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
           min="0" max="6" value="" tabindex="0"
           onchange = "updateSliderValue(this.value)">
+        </label>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
@@ -54,7 +55,7 @@
         </button>
         <!-- basic text -->
         <p></p>
-        <div id="hello-world"></div>
+        <div id="answer"></div>
       </main>
     </div>
   </body>
